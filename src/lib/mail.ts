@@ -6,7 +6,7 @@ export const sendVerificationEmail = async (
   email: string, 
   token: string
 ) => {
-  const confirmLink = `${domain}/auth/new-verification?token=${token}`;
+  const confirmLink = `${domain}/api/auth/new-verification?token=${token}`;
 
   // Replace with SMTP credentials
   const smtpOptions = {
